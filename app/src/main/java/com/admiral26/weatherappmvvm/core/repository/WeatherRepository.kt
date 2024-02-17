@@ -12,7 +12,7 @@ class WeatherRepository @Inject constructor(private val service: WeatherService)
 
     suspend fun getCurrentWeather(q:String):ResultWrapper<CurentWeatherRespons?,Any> {
         return parseResponse(Dispatchers.IO){
-            service.getCurrentWeather(q = q, api_key)
+            service.getCurrentWeather("abc250afba9c435489b60858241702",q = q,"no")
         }
     }
 }

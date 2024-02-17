@@ -19,7 +19,7 @@ object NetworkModule {
     @[Provides Singleton]
     fun provideRetrofit(okHttpClient: OkHttpClient) : Retrofit{
         return Retrofit.Builder()
-            .baseUrl(base_url)
+            .baseUrl("https://api.weatherapi.com/")
             .addConverterFactory(GsonConverterFactory.create())
             .client(okHttpClient)
             .build()

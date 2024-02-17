@@ -6,6 +6,7 @@ import androidx.lifecycle.viewModelScope
 import com.admiral26.weatherappmvvm.core.model.CurentWeatherRespons
 import com.admiral26.weatherappmvvm.core.repository.WeatherRepository
 import com.admiral26.weatherappmvvm.util.ResultWrapper
+import com.bumptech.glide.Glide
 import kotlinx.coroutines.launch
 import javax.inject.Inject
 
